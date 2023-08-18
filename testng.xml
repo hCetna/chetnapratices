@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<exclude name="smoke"></exclude>
+		</run>
+	</groups>
+	<!---<listeners>
+		<listener class-name="Utilities.ListnersImpl"></listener>
+	</listeners>-->
+	
+  <test  name="Test1" parallel="true" enabled="true" thread-count="3">
+    <classes>
+      <class name="testcases.testNgGroup"/>
+      <class name="testcases.parallelTesting"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
