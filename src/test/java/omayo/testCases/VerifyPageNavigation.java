@@ -20,7 +20,7 @@ public class VerifyPageNavigation extends BaseTest{
 		selenium143Pages= new Selenium143Pages(driver);
 		page.clickOnThisBlogIsCreatedForLink();
 		String parentWindowHandle=Utility.switchToNewWindow(driver);
-		assertEquals(selenium143Pages.getWhatIsSeleniumLinkText(), "What is are Selenium?");
+		assertEquals(selenium143Pages.getWhatIsSeleniumLinkText(), "What is Selenium?");
 		driver.close();
 		Utility.switchToWindow(driver, parentWindowHandle);
 		assertEquals(driver.getTitle(), "omayo (QAFox.com)");
