@@ -10,7 +10,7 @@
 		<listener class-name="Utilities.ListnersImpl"></listener>
 	</listeners>-->
 	
-  <test  name="Test1" parallel="true" enabled="true" thread-count="3">
+  <test  name="Test1" parallel="true" enabled="true" thread-count="1">
     <classes>
       <class name="testcases.testNgGroup"/>
       <class name="testcases.parallelTesting"/>
